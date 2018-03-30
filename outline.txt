@@ -1,0 +1,42 @@
+Django ORM presentation content
+
+Introduction to the ORM
+  - What is an ORM?
+    - python <--> SQL bridge
+  - Why use an ORM?
+
+Models
+  - Representations of Tables/Rows in databases
+  - fields
+  - one-to-many and many-to-many
+  - Authors <--> Books --> Topic
+
+QuerySets
+ - Lazy
+ - Chainable
+ - Cacheable
+
+QuerySet Basic operations (CRUD)
+  - create (Create a object)
+  - get / first (Get a single object)
+  - all / filter (Get multiple objects)
+  - update (save/update) (Update an existing Object)
+  - delete (Delete an object)
+  - count / len / exists (Get a count of objects)
+  - order (Sort a list of objects)
+  - limit (Only get a certain number of objects)
+
+Relationships
+  - Adding models
+  - filtering nested models
+
+Optimizations
+  - select_related
+  - prefetch_related
+  - count vs len vs 'if queryset'
+
+Advanced
+  - only / values / values_list (Only select certain columns)
+  - annotate / F()
+  - aggregate
+
